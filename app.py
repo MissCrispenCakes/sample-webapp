@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    
+
     # Load current count
     f = open("count.txt", "r")
     count = int(f.read())
