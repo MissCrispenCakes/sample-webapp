@@ -21,5 +21,9 @@ def index():
     # Render HTML with count variable
     return render_template("index.html", count=count)
 
+@app.route('/sketch/')
+def sketch():
+    return render_template('sketch.html')
+
 if __name__ == "__main__":
     app.run()
